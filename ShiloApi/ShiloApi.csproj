@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <UseNETCoreGenerator>true</UseNETCoreGenerator>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>14b3b19d-22b9-479e-9c70-ed00f1c7f32d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <StartupObject>ShiloApi.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211111221720_Initial.cs" />
+    <Compile Remove="Migrations\20211111221720_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20211207213620_ShiShop.cs" />
+    <Compile Remove="Migrations\20211207213620_ShiShop.Designer.cs" />
+    <Compile Remove="Migrations\20211207214121_ShioShop.cs" />
+    <Compile Remove="Migrations\20211207214121_ShioShop.Designer.cs" />
+    <Compile Remove="Migrations\20211214211015_add_Custumer_description.cs" />
+    <Compile Remove="Migrations\20211214211015_add_Custumer_description.Designer.cs" />
+    <Compile Remove="Migrations\20211220221650_ShiloSop.cs" />
+    <Compile Remove="Migrations\20211220221650_ShiloSop.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="app.config" />
+    <Content Remove="packages.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ApiSetings\app.config" />
+    <None Include="ApiSetings\packages.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\..\..\Desktop\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack.NetCore" Version="1.5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
+  </ItemGroup>
+
+
+</Project>
